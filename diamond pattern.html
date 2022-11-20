@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diamond pattern</title>
+</head>
+<body>
+    <script>
+        let n=5;
+        let string="";
+        for(i=1;i<=n;i++){
+            for(j=n;j>i;j--){
+                string +=" ";
+            }
+            for(k=1;k<=(2*i-1);k++){
+                string +="*";
+            }
+            string +="\n"
+        }
+        for(i=1; i<=n-1; i++){
+            for(j=0; j<i; j++){
+                string += " ";
+        }
+        for(k=(n-i) * 2-1; k>0; k--){
+                string += "*";
+            }
+            string +="\n";
+       }
+       console.log(string);
+    </script>
+</body>
+</html>
